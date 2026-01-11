@@ -1,0 +1,31 @@
+# --- OS / Editor ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Virtual envs ---
+.venv/
+
+# --- Build artifacts ---
+dist/
+build/
+*.egg-info/
+
+# --- Logs ---
+*.log
+
+# --- Local dirs ---
+data/*
+!data/.gitkeep
+
+# --- .env files ---
+.env

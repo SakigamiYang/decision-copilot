@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "decision-copilot"
+version = "0.1.0"
+description = "Minimal Decision Copilot (Python monolith) with SQLite and Redis (RQ)."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=2.15.0",
+    "orjson>=3.11.5",
+    "python-dotenv>=1.2.1",
+    "rq>=2.6.1",
+    "sqlalchemy>=2.0.45",
+]
+
+[project.scripts]
+decision-copilot = "decision_copilot.cli:main"
+
+[tool.setuptools]
+packages = ["decision_copilot"]
+
+include-package-data = false
