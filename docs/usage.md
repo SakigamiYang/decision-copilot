@@ -23,7 +23,7 @@ Key characteristics:
 
 ### System Requirements
 
-- Python 3.10 or newer
+- Python 3.12 or newer
 - Redis (local or via Docker)
 
 ### Installation
